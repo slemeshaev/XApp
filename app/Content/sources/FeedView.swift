@@ -14,10 +14,10 @@ struct FeedView: View {
             ScrollView {
             }
             Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                Image(systemName: "envelope")
+                Image(systemName: "pencil")
                     .resizable()
                     .renderingMode(.template)
-                    .frame(width: 32, height: 24)
+                    .frame(width: 28, height: 28)
                     .padding()
             })
             .background(Color(.systemBlue))
