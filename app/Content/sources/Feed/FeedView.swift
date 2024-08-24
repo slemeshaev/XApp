@@ -12,7 +12,14 @@ struct FeedView: View {
     var body: some View {
         ZStack(alignment: .bottomTrailing, content: {
             ScrollView {
+                VStack {
+                    ForEach(0..<20) { _ in
+                        FeedCell()
+                    }
+                }
+                .padding()
             }
+            
             Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
                 Image(systemName: "pencil")
                     .resizable()
