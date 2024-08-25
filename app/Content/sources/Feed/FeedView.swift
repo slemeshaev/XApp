@@ -17,7 +17,6 @@ struct FeedView: View {
                         FeedCell()
                     }
                 }
-                .padding()
             }
             
             Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
