@@ -14,8 +14,8 @@ struct ContentView: View {
             TabView {
                 FeedView()
                     .tabItem {
-                        Image(systemName: "house")
-                        Text("Home")
+                        Image(systemName: "doc.plaintext")
+                        Text("Feed")
                     }
                 SearchView()
                     .tabItem {
@@ -28,7 +28,7 @@ struct ContentView: View {
                         Text("Messages")
                     }
             }
-            .navigationBarTitle("Home")
+            .navigationBarTitle("Feed")
             .navigationBarTitleDisplayMode(.inline)
         }
     }

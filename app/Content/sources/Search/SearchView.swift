@@ -15,13 +15,18 @@ struct SearchView: View {
         VStack {
             SearchBar(searchText: $searchText)
             
-            ScrollView {
-                VStack {
-                    ForEach(0..<19) { _ in
-                        Text("Add Users here...")
+            VStack(alignment: .leading, content: {
+                ScrollView {
+                    VStack {
+                        ForEach(0..<20) { _ in
+                            UserCell()
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                                .padding(.leading, 8)
+                        }
                     }
+                    .padding()
                 }
-            }
+            })
         }
     }
 }
