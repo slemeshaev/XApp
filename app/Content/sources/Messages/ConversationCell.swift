@@ -1,5 +1,5 @@
 //
-//  CoversationCell.swift
+//  ConversationCell.swift
 //  X
 //
 //  Created by Stanislav Lemeshaev on 26.08.2024.
@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct CoversationCell: View {
+struct ConversationCell: View {
     var body: some View {
         VStack {
             HStack(spacing: 12) {
@@ -27,7 +27,9 @@ struct CoversationCell: View {
                         .font(.system(size: 14, weight: .regular))
                         .lineLimit(/*@START_MENU_TOKEN@*/2/*@END_MENU_TOKEN@*/)
                 }
+                .frame(height: 64)
                 .padding(.trailing)
+                .foregroundStyle(Color(.black))
             }
             
             Divider()
@@ -36,5 +38,5 @@ struct CoversationCell: View {
 }
 
 #Preview {
-    CoversationCell()
+    ConversationCell()
 }

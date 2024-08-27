@@ -15,7 +15,7 @@
 		6652F5F72C75B1DE005CD1D4 /* app.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6652F5E42C75AA39005CD1D4 /* app.xcassets */; };
 		6652F5F82C75B1E2005CD1D4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6652F5E72C75AA39005CD1D4 /* Preview Assets.xcassets */; };
 		665F0B8F2C7C3F2B0070744E /* ConversationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665F0B8E2C7C3F2B0070744E /* ConversationsView.swift */; };
-		665F0B912C7C3F380070744E /* CoversationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665F0B902C7C3F380070744E /* CoversationCell.swift */; };
+		665F0B912C7C3F380070744E /* ConversationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665F0B902C7C3F380070744E /* ConversationCell.swift */; };
 		666795862C799D0B00CE5649 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666795852C799D0B00CE5649 /* FeedCell.swift */; };
 		666795882C799E0100CE5649 /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 666795872C799E0100CE5649 /* images.xcassets */; };
 		6667958A2C799E1E00CE5649 /* colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 666795892C799E1E00CE5649 /* colors.xcassets */; };
@@ -32,7 +32,7 @@
 		6652F5E42C75AA39005CD1D4 /* app.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = app.xcassets; sourceTree = "<group>"; };
 		6652F5E72C75AA39005CD1D4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		665F0B8E2C7C3F2B0070744E /* ConversationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsView.swift; sourceTree = "<group>"; };
-		665F0B902C7C3F380070744E /* CoversationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoversationCell.swift; sourceTree = "<group>"; };
+		665F0B902C7C3F380070744E /* ConversationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationCell.swift; sourceTree = "<group>"; };
 		666795852C799D0B00CE5649 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		666795872C799E0100CE5649 /* images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = images.xcassets; sourceTree = "<group>"; };
 		666795892C799E1E00CE5649 /* colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = colors.xcassets; sourceTree = "<group>"; };
@@ -128,7 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				665F0B8E2C7C3F2B0070744E /* ConversationsView.swift */,
-				665F0B902C7C3F380070744E /* CoversationCell.swift */,
+				665F0B902C7C3F380070744E /* ConversationCell.swift */,
 			);
 			path = Messages;
 			sourceTree = "<group>";
@@ -222,7 +222,7 @@
 				66AE9D292C783D2B00FD766E /* FeedView.swift in Sources */,
 				6652F5F42C75B1A6005CD1D4 /* XApp.swift in Sources */,
 				660051C52C7B193000C337FA /* SearchBar.swift in Sources */,
-				665F0B912C7C3F380070744E /* CoversationCell.swift in Sources */,
+				665F0B912C7C3F380070744E /* ConversationCell.swift in Sources */,
 				660051C72C7B2A4700C337FA /* UserCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
