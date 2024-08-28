@@ -20,6 +20,8 @@
 		666795882C799E0100CE5649 /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 666795872C799E0100CE5649 /* images.xcassets */; };
 		6667958A2C799E1E00CE5649 /* colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 666795892C799E1E00CE5649 /* colors.xcassets */; };
 		66AE9D292C783D2B00FD766E /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AE9D282C783D2B00FD766E /* FeedView.swift */; };
+		66E43BE82C7ECD08004BF033 /* MessageInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E43BE72C7ECD08004BF033 /* MessageInputView.swift */; };
+		66E43BEA2C7ECF06004BF033 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E43BE92C7ECF06004BF033 /* ChatView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		666795872C799E0100CE5649 /* images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = images.xcassets; sourceTree = "<group>"; };
 		666795892C799E1E00CE5649 /* colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = colors.xcassets; sourceTree = "<group>"; };
 		66AE9D282C783D2B00FD766E /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		66E43BE72C7ECD08004BF033 /* MessageInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageInputView.swift; sourceTree = "<group>"; };
+		66E43BE92C7ECF06004BF033 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +133,8 @@
 			children = (
 				665F0B8E2C7C3F2B0070744E /* ConversationsView.swift */,
 				665F0B902C7C3F380070744E /* ConversationCell.swift */,
+				66E43BE72C7ECD08004BF033 /* MessageInputView.swift */,
+				66E43BE92C7ECF06004BF033 /* ChatView.swift */,
 			);
 			path = Messages;
 			sourceTree = "<group>";
@@ -216,8 +222,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				660051C32C7B03A900C337FA /* SearchView.swift in Sources */,
+				66E43BE82C7ECD08004BF033 /* MessageInputView.swift in Sources */,
 				6652F5F52C75B1AA005CD1D4 /* ContentView.swift in Sources */,
 				666795862C799D0B00CE5649 /* FeedCell.swift in Sources */,
+				66E43BEA2C7ECF06004BF033 /* ChatView.swift in Sources */,
 				665F0B8F2C7C3F2B0070744E /* ConversationsView.swift in Sources */,
 				66AE9D292C783D2B00FD766E /* FeedView.swift in Sources */,
 				6652F5F42C75B1A6005CD1D4 /* XApp.swift in Sources */,
