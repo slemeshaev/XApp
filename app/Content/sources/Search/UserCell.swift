@@ -23,7 +23,7 @@ struct UserCell: View {
                     .font(.system(size: 14, weight: .semibold))
                 Text("Anna Tokareva")
                     .font(.system(size: 14, weight: .regular))
-            }
+            }.foregroundStyle(Color(.black))
         }
     }
 }
