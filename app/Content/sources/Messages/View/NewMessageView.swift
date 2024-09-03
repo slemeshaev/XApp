@@ -26,7 +26,7 @@ struct NewMessageView: View {
                                 isShow.toggle()
                                 isStartChat.toggle()
                             }, label: {
-                                UserCell()
+                                SearchCell()
                                     .frame(maxWidth: .infinity, alignment: .leading)
                                     .padding(.leading, 8)
                             })

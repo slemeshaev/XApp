@@ -12,22 +12,21 @@ struct SearchView: View {
     @State var searchText = ""
     
     var body: some View {
-        VStack {
-            SearchBar(searchText: $searchText)
-            
-            VStack(alignment: .leading, content: {
+        ZStack(alignment: .bottomTrailing, content: {
+            VStack {
+                SearchBar(searchText: $searchText)
                 ScrollView {
                     VStack {
                         ForEach(0..<20) { _ in
-                            UserCell()
+                            SearchCell()
                                 .frame(maxWidth: .infinity, alignment: .leading)
                                 .padding(.leading, 8)
                         }
                     }
-                    .padding()
                 }
-            })
-        }
+                .padding()
+            }
+        })
     }
 }
 

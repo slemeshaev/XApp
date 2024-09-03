@@ -1,5 +1,5 @@
 //
-//  UserCell.swift
+//  SearchCell.swift
 //  X
 //
 //  Created by Stanislav Lemeshaev on 25.08.2024.
@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct UserCell: View {
+struct SearchCell: View {
     var body: some View {
         HStack(spacing: 12) {
             Image("avatar_2")
@@ -29,5 +29,5 @@ struct UserCell: View {
 }
 
 #Preview {
-    UserCell()
+    SearchCell()
 }
