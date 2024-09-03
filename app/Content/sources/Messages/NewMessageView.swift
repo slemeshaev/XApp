@@ -11,8 +11,8 @@ import SwiftUI
 struct NewMessageView: View {
     @State var searchText = ""
     
-    @Binding var show: Bool
-    @Binding var startChat: Bool
+    @Binding var isShow: Bool
+    @Binding var isStartChat: Bool
     
     var body: some View {
         VStack {
@@ -23,8 +23,8 @@ struct NewMessageView: View {
                     VStack {
                         ForEach(0..<20) { _ in
                             Button(action: {
-                                show.toggle()
-                                startChat.toggle()
+                                isShow.toggle()
+                                isStartChat.toggle()
                             }, label: {
                                 UserCell()
                                     .frame(maxWidth: .infinity, alignment: .leading)
@@ -40,5 +40,5 @@ struct NewMessageView: View {
 }
 
 #Preview {
-    NewMessageView(show: .constant(true), startChat: .constant(true))
+    NewMessageView(isShow: .constant(true), isStartChat: .constant(true))
 }

@@ -44,7 +44,10 @@ struct ConversationsView: View {
                 .sheet(
                     isPresented: $isShowingNewMessage,
                     content: {
-                        NewMessageView(show: $isShowingNewMessage, startChat: $isChatVisible)
+                        NewMessageView(
+                            isShow: $isShowingNewMessage,
+                            isStartChat: $isChatVisible
+                        )
                     }
                 )
             })
