@@ -24,6 +24,7 @@
 		666795882C799E0100CE5649 /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 666795872C799E0100CE5649 /* images.xcassets */; };
 		6667958A2C799E1E00CE5649 /* colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 666795892C799E1E00CE5649 /* colors.xcassets */; };
 		66AE9D292C783D2B00FD766E /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AE9D282C783D2B00FD766E /* FeedView.swift */; };
+		66CB1AC22C86CA2F007D7B96 /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CB1AC12C86CA2F007D7B96 /* UserProfileView.swift */; };
 		66E43BE82C7ECD08004BF033 /* MessageInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E43BE72C7ECD08004BF033 /* MessageInputView.swift */; };
 		66E43BEA2C7ECF06004BF033 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E43BE92C7ECF06004BF033 /* ChatView.swift */; };
 /* End PBXBuildFile section */
@@ -47,6 +48,7 @@
 		666795872C799E0100CE5649 /* images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = images.xcassets; sourceTree = "<group>"; };
 		666795892C799E1E00CE5649 /* colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = colors.xcassets; sourceTree = "<group>"; };
 		66AE9D282C783D2B00FD766E /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		66CB1AC12C86CA2F007D7B96 /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
 		66E43BE72C7ECD08004BF033 /* MessageInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageInputView.swift; sourceTree = "<group>"; };
 		66E43BE92C7ECF06004BF033 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -123,6 +125,7 @@
 				665F0B8D2C7C3EDA0070744E /* Messages */,
 				660051C12C7AF92700C337FA /* Search */,
 				6667958B2C799FF500CE5649 /* Feed */,
+				66CB1AC02C86CA08007D7B96 /* Profile */,
 			);
 			path = sources;
 			sourceTree = "<group>";
@@ -158,6 +161,14 @@
 				666795852C799D0B00CE5649 /* FeedCell.swift */,
 			);
 			path = Feed;
+			sourceTree = "<group>";
+		};
+		66CB1AC02C86CA08007D7B96 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				66CB1AC12C86CA2F007D7B96 /* UserProfileView.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,6 +255,7 @@
 				6652F5F42C75B1A6005CD1D4 /* XApp.swift in Sources */,
 				661F08392C849CBD00BFA606 /* NewMessageView.swift in Sources */,
 				661F08352C81DF0800BFA606 /* Message.swift in Sources */,
+				66CB1AC22C86CA2F007D7B96 /* UserProfileView.swift in Sources */,
 				660051C52C7B193000C337FA /* SearchBar.swift in Sources */,
 				665F0B912C7C3F380070744E /* ConversationCell.swift in Sources */,
 				661F08372C81E58700BFA606 /* MessageView.swift in Sources */,
