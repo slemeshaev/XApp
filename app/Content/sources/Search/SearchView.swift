@@ -12,21 +12,20 @@ struct SearchView: View {
     @State var searchText = ""
     
     var body: some View {
-        ZStack(alignment: .bottomTrailing, content: {
-            VStack {
-                SearchBar(searchText: $searchText)
-                ScrollView {
-                    VStack {
-                        ForEach(0..<20) { _ in
+        ScrollView {
+            SearchBar(searchText: $searchText)
+            
+            VStack(alignment: .leading) {
+                ForEach(0..<10) { _ in
+                    HStack { Spacer () }
+                    NavigationLink(
+                        destination: ProfileContentView(),
+                        label: {
                             SearchCell()
-                                .frame(maxWidth: .infinity, alignment: .leading)
-                                .padding(.leading, 8)
-                        }
-                    }
+                        })
                 }
-                .padding()
-            }
-        })
+            }.padding(.leading)
+        }
     }
 }
 
