@@ -8,9 +8,32 @@
 
 import SwiftUI
 
+enum PostFilterOptions: Int, CaseIterable {
+    case posts
+    case replies
+    case likes
+    
+    var title: String {
+        switch self {
+        case .posts:
+            return "Posts"
+        case .replies:
+            return "Posts & Replies"
+        case .likes:
+            return "Likes"
+        }
+    }
+}
+
 struct FilterButtonView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(alignment: .leading) {
+            HStack {
+                ForEach(PostFilterOptions.allCases, id: \.self) { option in
+                    Text(option.title)
+                }
+            }
+        }
     }
 }
 
