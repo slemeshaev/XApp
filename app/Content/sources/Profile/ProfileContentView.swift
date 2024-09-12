@@ -9,10 +9,15 @@
 import SwiftUI
 
 struct ProfileContentView: View {
+    @State var selectedFilter: PostFilterOptions = .posts
+    
     var body: some View {
         ScrollView {
             VStack {
                 ProfileHeaderView()
+                    .padding()
+                
+                FilterButtonView(selectedOption: $selectedFilter)
                     .padding()
             }
             .navigationTitle("atokareva")

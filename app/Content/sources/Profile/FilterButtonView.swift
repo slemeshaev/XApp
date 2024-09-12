@@ -26,17 +26,41 @@ enum PostFilterOptions: Int, CaseIterable {
 }
 
 struct FilterButtonView: View {
+    @Binding var selectedOption: PostFilterOptions
+    @State private var isVisible = true
+    
+    private let underlineWidth =  CGFloat(UIScreen.main.bounds.width) / CGFloat(PostFilterOptions.allCases.count)
+    
+    private var padding: CGFloat {
+        let rawValue = CGFloat(selectedOption.rawValue)
+        let count = CGFloat(PostFilterOptions.allCases.count)
+        return ((UIScreen.main.bounds.width / count) * rawValue) + 16
+    }
+    
     var body: some View {
         VStack(alignment: .leading) {
             HStack {
                 ForEach(PostFilterOptions.allCases, id: \.self) { option in
-                    Text(option.title)
+                    Button(action: {
+                        self.selectedOption = option
+                        isVisible.toggle()
+                    }, label: {
+                        Text(option.title)
+                            .frame(width: underlineWidth - 8)
+                            .transition(.slide)
+                    })
                 }
             }
+            
+            Rectangle()
+                .frame(width: underlineWidth - 32, height: 3, alignment: .center)
+                .foregroundStyle(Color(.blue))
+                .padding(.leading, padding)
+                .animation(.spring, value: isVisible)
         }
     }
 }
 
 #Preview {
-    FilterButtonView()
+    FilterButtonView(selectedOption: .constant(.posts))
 }
