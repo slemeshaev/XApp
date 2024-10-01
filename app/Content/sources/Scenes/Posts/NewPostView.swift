@@ -10,11 +10,12 @@ import SwiftUI
 
 struct NewPostView: View {
     @Binding var isPresented: Bool
+    @State var captionText: String = ""
     
     var body: some View {
         NavigationView {
             VStack {
-                HStack {
+                HStack(alignment: .top) {
                     Image("avatar_3")
                         .resizable()
                         .scaledToFill()
@@ -22,8 +23,7 @@ struct NewPostView: View {
                         .frame(width: 64, height: 64)
                         .clipShape(Circle())
                     
-                    Text("What's news?")
-                        .foregroundStyle(Color(.gray))
+                    TextArea(text: $captionText, placeholder: "What's news?")
                     
                     Spacer()
                 }
