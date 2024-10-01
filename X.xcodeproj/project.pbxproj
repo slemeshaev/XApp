@@ -159,6 +159,7 @@
 		66C7D3C12CABBA1000907938 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				6615890B2C8103AD002DE9B5 /* ChatBubble.swift */,
 				66C7D3C22CABBA4C00907938 /* TextArea.swift */,
 			);
 			path = Components;
@@ -233,7 +234,6 @@
 			children = (
 				665F0B8E2C7C3F2B0070744E /* ConversationsView.swift */,
 				665F0B902C7C3F380070744E /* ConversationCell.swift */,
-				6615890B2C8103AD002DE9B5 /* ChatBubble.swift */,
 				66E43BE92C7ECF06004BF033 /* ChatView.swift */,
 				66E43BE72C7ECD08004BF033 /* MessageInputView.swift */,
 				661F08362C81E58700BFA606 /* MessageView.swift */,
