@@ -1,17 +1,16 @@
 //
-//  StyledTextField.swift
+//  SecureTextField.swift
 //  X
 //
-//  Created by Stanislav Lemeshaev on 02.10.2024.
+//  Created by Stanislav Lemeshaev on 03.10.2024.
 //  Copyright © 2024 slemeshaev. All rights reserved.
 //
 
 import SwiftUI
 
-struct StyledTextField: View {
+struct SecureTextField: View {
     @Binding var text: String
     let placeholder: Text
-    let imageName: String
     
     var body: some View {
         ZStack(alignment: .leading) {
@@ -22,22 +21,18 @@ struct StyledTextField: View {
             }
             
             HStack(spacing: 16) {
-                Image(systemName: imageName)
+                Image(systemName: "lock")
                     .resizable()
                     .scaledToFit()
                     .frame(width: 20, height: 20)
                     .foregroundStyle(Color(.white))
                 
-                TextField("Email", text: $text)
+                SecureField("Password", text: $text)
             }
         }
     }
 }
 
 #Preview {
-    StyledTextField(
-        text: .constant(""),
-        placeholder: Text("Email"),
-        imageName: "envelope"
-    )
+    SecureTextField(text: .constant(""), placeholder: Text("Password"))
 }

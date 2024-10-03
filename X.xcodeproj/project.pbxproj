@@ -27,6 +27,7 @@
 		6667958A2C799E1E00CE5649 /* colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 666795892C799E1E00CE5649 /* colors.xcassets */; };
 		666FAB552C94231F003F9A7B /* NewPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666FAB542C94231F003F9A7B /* NewPostView.swift */; };
 		666FAB582C9431B1003F9A7B /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666FAB572C9431B1003F9A7B /* ProfileHeaderView.swift */; };
+		66860F532CAE6B2B008F6E48 /* SecureTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66860F522CAE6B2B008F6E48 /* SecureTextField.swift */; };
 		66A1EE2A2CAD002100018B81 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A1EE292CAD002100018B81 /* LoginView.swift */; };
 		66A1EE2C2CAD005F00018B81 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A1EE2B2CAD005F00018B81 /* RegisterView.swift */; };
 		66A1EE2E2CAD141C00018B81 /* StyledTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A1EE2D2CAD141C00018B81 /* StyledTextField.swift */; };
@@ -59,6 +60,7 @@
 		666795892C799E1E00CE5649 /* colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = colors.xcassets; sourceTree = "<group>"; };
 		666FAB542C94231F003F9A7B /* NewPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostView.swift; sourceTree = "<group>"; };
 		666FAB572C9431B1003F9A7B /* ProfileHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
+		66860F522CAE6B2B008F6E48 /* SecureTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureTextField.swift; sourceTree = "<group>"; };
 		66A1EE292CAD002100018B81 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		66A1EE2B2CAD005F00018B81 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		66A1EE2D2CAD141C00018B81 /* StyledTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StyledTextField.swift; path = app/Content/sources/Views/Components/StyledTextField.swift; sourceTree = SOURCE_ROOT; };
@@ -177,6 +179,7 @@
 				66C7D3C22CABBA4C00907938 /* TextArea.swift */,
 				6615890B2C8103AD002DE9B5 /* ChatBubble.swift */,
 				66A1EE2D2CAD141C00018B81 /* StyledTextField.swift */,
+				66860F522CAE6B2B008F6E48 /* SecureTextField.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -353,6 +356,7 @@
 				665F0B912C7C3F380070744E /* ConversationCell.swift in Sources */,
 				661F08372C81E58700BFA606 /* MessageView.swift in Sources */,
 				663D8ACC2C881AE800CEF33A /* ProfileButtonView.swift in Sources */,
+				66860F532CAE6B2B008F6E48 /* SecureTextField.swift in Sources */,
 				660051C72C7B2A4700C337FA /* SearchCell.swift in Sources */,
 				66A1EE2E2CAD141C00018B81 /* StyledTextField.swift in Sources */,
 				666FAB552C94231F003F9A7B /* NewPostView.swift in Sources */,
