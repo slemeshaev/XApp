@@ -12,7 +12,7 @@ import SwiftUI
 struct XApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LoginView()
         }
     }
 }
